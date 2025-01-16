@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+*, 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+  --body-back-color: #2b1103;
+  --open-sans: "Open Sans";
+  --text-color: #dbc69c;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.phone-number:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--body-back-color);
+  max-width: 1400px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-left: 24px;
+}
+.nav__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav {
+  padding-top: 30px;
+}
+.nav__logo-logo {
+  width: 87px;
+  padding-bottom: 5px;
+}
+.nav__social {
+  color: var(--body-back-color);
+  padding: 20px 15px;
+}
+
+.nav__contact {
+  font-family: var(--open-sans), sans-serif;
+  color: #dbc69c;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin: -12.5px -20px;
+  padding-top: 45px;
+  padding-bottom: 75px;
+  color: var(--body-back-color);
+  font-family: var(--open-sans), sans-serif;
+}
+.nav__link {
+  text-decoration: none;
+  color: #f4efe2b0;
+  font-family: var(--open-sans), sans-serif;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  &:hover {
+    color: #f4efe2;
+    text-decoration-line: underline;
+  }
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+  background-color: var(--body-back-color);
+  fill: var(--text-color);
+}
+svg:hover {
+  fill: #a79b77;
+}
+
+.hotel-photo {
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .nav__links,
+  .nav__contact,
+  .nav__socials {
+    display: none;
+  }
+  .nav__top {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 50px; 
+  }
+
+  .nav__links.show {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* .nav__contact.show {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav__socials.show {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; 
+    font-size: 24px;
+    cursor: pointer;
+  }
+  body.no-scroll {
+    overflow: hidden;
+  }
+}
