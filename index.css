@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
-*, 
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*,
 *::before,
 *::after {
   margin: 0;
@@ -126,7 +126,7 @@ nav a {
   .nav__top {
     display: flex;
     justify-content: start;
-    padding-bottom: 50px; 
+    padding-bottom: 50px;
   }
 
   .nav__links.show {
@@ -155,11 +155,40 @@ nav a {
     position: absolute;
     top: 10px;
     right: 10px;
-    z-index: 1000; 
+    z-index: 1000;
     font-size: 24px;
     cursor: pointer;
   }
   body.no-scroll {
     overflow: hidden;
   }
+}
+
+/* carousel */
+
+.carousel-title {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  padding-top: 50px;
+  color: #f2efe3b0;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: row ;
+  justify-content: center;
+  padding-top: 50px;
+  font-size: 24px;
+  color:var(--text-color);
+  font-family: "Crimson Pro", serif;
+  
+}
+
+.carousel-item-description {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  color: #f2efe3b0;
+  font-size: 16px;
 }

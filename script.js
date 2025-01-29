@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav__links');
     const navContact = document.querySelector('.nav__contact');
     const navSocials = document.querySelector('.nav__socials');
-    const body = document.body;
+    const body = document.querySelector("body");
   
     menuToggle.addEventListener('click', () => {
       navLinks.classList.toggle('show');
@@ -12,4 +12,5 @@ document.addEventListener('DOMContentLoaded', () => {
       body.classList.toggle('no-scroll');
     });
   });
+  
   
