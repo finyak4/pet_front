@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   let currentIndex = 0;
-
+  
   const carouselContainer = document.querySelector(".carousel-container");
   const prevBtn = document.getElementById("prev-btn");
   const nextBtn = document.getElementById("next-btn");
