@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 *,
 *::before,
@@ -14,7 +13,9 @@
   scroll-behavior: smooth;
   --body-back-color: #2b1103;
   --open-sans: "Open Sans";
+  --crimpson-pro: "Cripmson Pro";
   --text-color: #dbc69c;
+  --color-f2efe3b0: #f2efe3b0;
 }
 
 .phone-number:hover {
@@ -154,14 +155,14 @@ nav a {
   justify-content: center;
   font-size: 12px;
   padding-top: 50px;
-  color: #f2efe3b0;
+  color: var(--color-f2efe3b0);
 }
 
 .carousel-item-description {
   display: flex;
   justify-content: center;
   padding-top: 25px;
-  color: #f2efe3b0;
+  color: var(--color-f2efe3b0);
   font-size: 16px;
 }
 
@@ -193,7 +194,6 @@ nav a {
     font-size: 24px;
     color: var(--text-color);
     font-family: "Crimson Pro", serif;
-    
   }
 }
 @media (min-width: 786px) {
@@ -224,5 +224,77 @@ nav a {
       background-color: var(--text-color);
       border-radius: 50%;
     }
+  }
+}
+
+.duomo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.duomo__title {
+  font-size: 12px;
+  font-family: var(--open-sans), serif;
+  color: var(--color-f2efe3b0);
+  font-weight: bold;
+}
+
+.duomo__welcome {
+  padding-top: 40px;
+  font-size: 46px;
+  font-family: var(--crimpson-pro), serif;
+  color: var(--text-color);
+}
+
+.duomo__description {
+  padding-top: 25px;
+  font-size: 18px;
+  color: var(--color-f2efe3b0);
+  font-family: var(--open-sans), serif;
+}
+
+.duomo__reservation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 35px;
+  .duomo__reservation-text{
+    font-size: 16px;
+    font-family: var(--crimpson-pro), serif;
+    color: var(--text-color);
+  }
+  .duomo__video-text{
+    font-size: 16px;
+    font-family: var(--crimpson-pro), serif;
+    color: var(--text-color);
+  }
+}
+
+.duomo__reservation-text-border {
+  border: 2px solid var(--text-color); 
+  padding: 10px 15px;
+  cursor: default;
+  transition: background-color 0.4s ease;
+  &:hover {
+    cursor: pointer;
+    background-color: #94876d;
+  }
+}
+
+@media (min-width: 786px) {
+  .duomo__title {
+    padding-top: 75px;
+  }
+  .duomo__welcome{
+    font-size: 65px;
+  }
+}
+
+@media (min-width: 992px) {
+  .duomo__welcome{
+    font-size: 74px;
   }
 }
