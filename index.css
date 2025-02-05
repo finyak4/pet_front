@@ -16,6 +16,8 @@
   --crimpson-pro: "Cripmson Pro";
   --text-color: #dbc69c;
   --color-f2efe3b0: #f2efe3b0;
+  --color-f2efe38f: #f2efe38f;
+  --color-f2efe3b3: #f2efe3b3;
 }
 
 .phone-number:hover {
@@ -261,20 +263,29 @@ nav a {
   text-align: center;
   align-items: center;
   padding-top: 35px;
-  .duomo__reservation-text{
+  .duomo__reservation-text {
     font-size: 16px;
     font-family: var(--crimpson-pro), serif;
     color: var(--text-color);
+    font-weight: bold;
   }
-  .duomo__video-text{
-    font-size: 16px;
+  .duomo__video-text {
+    font-size: 17px;
     font-family: var(--crimpson-pro), serif;
     color: var(--text-color);
+    padding-left: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    &:hover {
+      color: #94876d;
+      text-decoration-line: underline;
+    }
   }
 }
 
 .duomo__reservation-text-border {
-  border: 2px solid var(--text-color); 
+  border: 2px solid var(--text-color);
   padding: 10px 15px;
   cursor: default;
   transition: background-color 0.4s ease;
@@ -288,13 +299,112 @@ nav a {
   .duomo__title {
     padding-top: 75px;
   }
-  .duomo__welcome{
+  .duomo__welcome {
     font-size: 65px;
   }
 }
 
 @media (min-width: 992px) {
-  .duomo__welcome{
+  .duomo__welcome {
     font-size: 74px;
   }
+}
+
+.hotel-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+.hotel-info__title {
+  font-family: var(--open-sans), serif;
+  font-size: 12px;
+  color: var(--color-f2efe3b3);
+  letter-spacing: 2px;
+}
+
+.hotel-info__description {
+  font-size: 24px;
+  font-family: var(--crimpson-pro);
+  color: var(--text-color);
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (min-width: 786px) {
+  .hotel-info__description {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hotel-info__description {
+    font-size: 28px;
+  }
+}
+
+.hotel-info__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 50px;
+  .hotel-info__item-title {
+    font-size: 24px;
+    font-family: var(--crimpson-pro);
+    color: var(--text-color);
+    padding-top: 15px;
+    font-weight: bold;
+  }
+  .hotel-info__item-description {
+    font-family: var(--open-sans), serif;
+    font-size: 16px;
+    color: var(--color-f2efe38f);
+    padding-top: 20px;
+  }
+}
+
+.hotel-info__image {
+  width: 50px;
+}
+
+@media (min-width: 786px) {
+  .hotel-info__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .hotel-info__image {
+    width: 70px;
+  }
+  .hotel-info__item {
+    .hotel-info__item-title {
+      font-size: 26px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .hotel-info__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+  }
+  .hotel-info__item {
+    .hotel-info__item-title {
+      font-size: 28px;
+    }
+  }
+}
+
+
+.hotel-details-img{
+  width: 600px;
 }
