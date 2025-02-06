@@ -37,6 +37,7 @@ body {
   margin: 0 auto;
   padding-left: 24px;
   padding-right: 15px;
+  position: relative;
 }
 .nav__top {
   display: flex;
@@ -157,7 +158,7 @@ nav a {
   display: flex;
   justify-content: center;
   font-size: 12px;
-  padding-top: 50px;
+  padding-top: 100px;
   color: var(--color-f2efe3b0);
   letter-spacing: 2px;
   font-weight: bold;
@@ -578,3 +579,4 @@ nav a {
     font-size: 36px;
   }
 }
+
